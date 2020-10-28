@@ -86,15 +86,6 @@ center
 
 /* Div Esquerda*/
 
-#header
-{
-	text-align: center;
-	text-decoration-style: solid;
-	animation-duration: 3s;
-	animation-name: slidein;
-	animation-iteration-count: infinite;
-	animation-direction: alternate;
-}
 
 
 /* Div Direita */
@@ -212,54 +203,3 @@ center
 	background-image: -webkit-linear-gradient(#419D78, #3c6e34);
 
 }
-
-.slidein {
-	-moz-animation-duration: 1s;
-	-webkit-animation-duration: 1s;
-	animation-duration: 1s;
-	-moz-animation-name: slidein;
-	-webkit-animation-name: slidein;
-	animation-name: slidein;
-	-moz-animation-iteration-count: 1;
-	-webkit-animation-iteration-count: 1;
-	animation-iteration-count: 1;
-	-moz-animation-direction: alternate;
-	-webkit-animation-direction: alternate;
-	animation-direction: alternate;
-  }
-	  
-  @-moz-keyframes slidein {
-	from {
-	  margin-left:100%;
-	  width:300%
-	}
-		
-	to {
-	  margin-left:0%;
-	  width:100%;
-	}
-  }
-  
-  @-webkit-keyframes slidein {
-	from {
-	  margin-left:100%;
-	  width:50px
-	}
-	
-	to {
-	 margin-left:0%;
-	 width:50px;
-   }
-  }
-  
-  @keyframes slidein {
-	from {
-	  margin-left:50px;
-	  width:50px
-	}
-	
-	to {
-	 margin-left:0%;
-	 width:50px;
-   }
-  }
