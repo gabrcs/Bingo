@@ -1,0 +1,265 @@
+*
+{
+	margin: 0px;
+	padding: 0px;
+	font-family: Courier New;
+}
+
+.container
+{
+	width: 1188px;
+	margin: 0 auto;
+}
+
+body
+{
+	background: url('backimg.jpg') center center no-repeat fixed; 
+ 	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}
+
+header
+{
+	text-align: left 10px;
+	color: white;
+	font-size: 30px;
+	text-shadow: 5px 5px 5px #000000;
+	padding: 20px;
+	margin: 10px;
+	border-radius: 10px;
+	background-color: #1E371A, #3c6e34
+	background-image: -moz-linear-gradient(#1E371A, #3c6e34);
+	background-image: -webkit-linear-gradient(#1E371A, #3c6e34);
+}
+
+footer
+{
+	clear: both;
+	background-color: #1E371A;
+	height: 50px;
+	padding: 10px;
+	text-align: center;
+	color: white;
+	font-size: 20px;
+	border-radius: 10px;
+	margin: 10px;
+
+}
+
+center
+{
+	text-shadow: 1px 1px grey;
+}
+
+/*divs */
+
+#div_esq
+{
+	background-color: rgba(255,255,255, 0.7);
+	min-height: 800px;
+	width: 69%;
+	border-radius: 10px;
+	float: left;
+}
+
+#div_dir
+{
+	background-color: #419D78;
+	background-color: rgba(65,157,120, 0.90);
+	min-height: 500px;
+	width: 330px;
+	border-radius: 10px;
+	float: right;
+	padding: 10px;
+}
+
+#div_bottom
+{
+	float: bottom; 
+	padding: 0.1px;
+	text-align: center;
+	color: transparent;
+	font-size: 4px;
+}
+
+/* Div Esquerda*/
+
+#header
+{
+	text-align: center;
+	text-decoration-style: solid;
+	animation-duration: 3s;
+	animation-name: slidein;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+
+/* Div Direita */
+
+#imgdivdir
+{
+	top: 50%;
+	border-radius: 100px;
+	float: center;
+}
+#textodivdir
+{
+	text-align: center;
+	position:absolute;
+	width: 330px;
+	top: 60%;
+}
+
+#textodivdir2
+{
+	text-align: center;
+	position:absolute;
+	width: 330px;
+	top: 70%;
+}
+
+/* Bingo */
+
+#para {
+    font-family: 'Roboto', sans-serif; font-size: 12pt;
+    font-weight: 300px;
+	margin-left: 200px;
+	margin-right: 200px;
+    text-align: center;
+    padding: 10px;
+	color: white;
+	border-radius: 10px;
+	background-color: #419D78, #3c6e34
+	background-image: -moz-linear-gradient(#419D78, #3c6e34);
+	background-image: -webkit-linear-gradient(#419D78, #3c6e34);
+  }
+  
+  p a {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+  }
+  
+  #squarefree {
+    font-family: Helvetica;
+    margin: 0 auto;
+    background: #5dc4de;
+    text-align: center;
+    font-weight: 600;
+    font-size: 15pt;
+  }
+  
+#bingotable {
+    margin: 0 auto;
+    text-align: center;
+    width: 300px;
+    height: 300px;
+    border-collapse: collapse;
+    background: white;
+}
+  
+  th, td {
+    font-family: Helvetica;
+    margin: 0 auto;
+    text-align: center;
+    border: 3px solid black;
+    width: 20%;
+  }
+  
+  .orange {
+    background: #419D78;
+  }
+
+  #sort {
+    font-family: 'Roboto', sans-serif; font-size: 12pt;
+    font-weight: 350px;
+	margin-left: 280px;
+	margin-right: 280px;
+    text-align: center;
+    padding: 10px;
+	color: white;
+	border-radius: 10px;
+	background-color: #419D78, #3c6e34
+	background-image: -moz-linear-gradient(#419D78, #3c6e34);
+	background-image: -webkit-linear-gradient(#419D78, #3c6e34);
+  }
+
+  #sort a:hover{
+	font-family: 'Roboto', sans-serif; font-size: 12pt;
+    font-weight: 300px;
+    text-align: center;
+	padding: 10px;
+	color: white;
+	border-radius: 10px;
+	background-color: black, #3c6e34
+	background-image: -moz-linear-gradient(#419D78, #3c6e34);
+	background-image: -webkit-linear-gradient(#419D78, #3c6e34);
+
+}
+
+  #para a:hover{
+	font-family: 'Roboto', sans-serif; font-size: 12pt;
+    font-weight: 300px;
+    text-align: center;
+	padding: 10px;
+	color: black;
+	border-radius: 10px;
+	background-color: #419D78, #3c6e34
+	background-image: -moz-linear-gradient(#419D78, #3c6e34);
+	background-image: -webkit-linear-gradient(#419D78, #3c6e34);
+
+}
+
+.slidein {
+	-moz-animation-duration: 1s;
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-moz-animation-name: slidein;
+	-webkit-animation-name: slidein;
+	animation-name: slidein;
+	-moz-animation-iteration-count: 1;
+	-webkit-animation-iteration-count: 1;
+	animation-iteration-count: 1;
+	-moz-animation-direction: alternate;
+	-webkit-animation-direction: alternate;
+	animation-direction: alternate;
+  }
+	  
+  @-moz-keyframes slidein {
+	from {
+	  margin-left:100%;
+	  width:300%
+	}
+		
+	to {
+	  margin-left:0%;
+	  width:100%;
+	}
+  }
+  
+  @-webkit-keyframes slidein {
+	from {
+	  margin-left:100%;
+	  width:50px
+	}
+	
+	to {
+	 margin-left:0%;
+	 width:50px;
+   }
+  }
+  
+  @keyframes slidein {
+	from {
+	  margin-left:50px;
+	  width:50px
+	}
+	
+	to {
+	 margin-left:0%;
+	 width:50px;
+   }
+  }
