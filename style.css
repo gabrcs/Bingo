@@ -3,8 +3,9 @@
 	margin: 0px;
 	padding: 0px;
 	font-family: Courier New;
+	box-sizing: border-box;
+	font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
 }
-
 .container
 {
 	width: 1188px;
@@ -66,11 +67,11 @@ center
 
 #div_dir
 {
-	background-color: #419D78;
 	background-color: rgba(65,157,120, 0.90);
 	min-height: 500px;
-	width: 330px;
+	width: 29%;
 	border-radius: 10px;
+	margin: 10px;
 	float: right;
 	padding: 10px;
 }
