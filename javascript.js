@@ -109,50 +109,59 @@ function verifNum(sq1,sq2,sq3,sq4,sq5,sq6,sq7,sq9,sq10,sq11,sq12,sq13,sq14,sq15)
 
   if (sq1.style.backgroundColor == "lightblue"){
     cout++; 
-  }        
+  }   
+  
   if (sq2.style.backgroundColor == "lightblue"){
     cout++; 
-  }          
+  }   
+  
   if (sq3.style.backgroundColor == "lightblue"){
     cout++; 
-  }       
+  }  
+  
   if (sq4.style.backgroundColor == "lightblue"){
     cout++; 
-  }             
+  }   
+  
   if (sq5.style.backgroundColor == "lightblue"){
     cout++; 
-  }         
+  }  
+  
   if (sq6.style.backgroundColor == "lightblue"){
     cout++; 
   }           
   if (sq7.style.backgroundColor == "lightblue"){
     cout++; 
-  }          
+  }   
+  
   if (sq8.style.backgroundColor == "lightblue"){
     cout++;
-  }      
+  }    
+  
   if (sq9.style.backgroundColor == "lightblue"){
     cout++;
   }
+  
   if (sq11.style.backgroundColor == "lightblue"){
     cout++;
   }
+  
   if (sq12.style.backgroundColor == "lightblue"){
     cout++;
   }
+  
   if (sq13.style.backgroundColor == "lightblue"){
     cout++;
-  }       
+  }    
+  
   if (sq14.style.backgroundColor == "lightblue"){
     cout = cout + 1;
-  }       
+  }  
+  
   if (sq15.style.backgroundColor == "lightblue"){
     cout++;
   }
-  else {
-    window.alert("Você não acertou nenhum número!");
-  }
-
+  
   var div = document.getElementById("acertos");
   div.innerText = "Quantidade de acertos: " + cout;
 }
