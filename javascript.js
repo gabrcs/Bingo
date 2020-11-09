@@ -155,7 +155,7 @@ function verifNum(sq1,sq2,sq3,sq4,sq5,sq6,sq7,sq9,sq10,sq11,sq12,sq13,sq14,sq15)
   }    
   
   if (sq14.style.backgroundColor == "lightblue"){
-    cout = cout + 1;
+    cout++;
   }  
   
   if (sq15.style.backgroundColor == "lightblue"){
