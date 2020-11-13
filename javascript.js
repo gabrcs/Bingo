@@ -3,21 +3,107 @@ var bloco1,bloco2,bloco3,bloco4,bloco5,bloco6,bloco7,bloco8,bloco9,bloco10,bloco
 var numUsados = new Array();
 
 function geraCartela(){
-  var  b1 = Math.floor(Math.random() * 20) + 1;
-  var  b2 = Math.floor(Math.random() * (40 - 21)) + 21;
-  var  b3 = Math.floor(Math.random() * (60 - 41)) + 41;
+  //Gera numeros aleatórios
+  var  b1 = Math.floor(Math.random() * 20) + 1;  //Entre 1 a 20
+  var  b2 = Math.floor(Math.random() * (40 - 21)) + 21;  //Entre 21 a 40
+  var  b3 = Math.floor(Math.random() * (60 - 41)) + 41;  //Entre 41 a 60
+ 
+  //Verifica se os numeros são iguais ao anteriores
   var  b4 = Math.floor(Math.random() * 20) + 1;
+  if(b4 == b1){
+    var  b4 = Math.floor(Math.random() * 20) + 1;
+  } 
+
   var  b5 = Math.floor(Math.random() * (40 - 21)) + 21;
+  if(b5 == b2){
+    var  b5 = Math.floor(Math.random() * (40 - 21)) + 21;
+  }
+
   var  b6 = Math.floor(Math.random() * (60 - 41)) + 41;
+  if(b6 == b3){
+    var  b6 = Math.floor(Math.random() * (60 - 41)) + 41;
+  }
+  
   var  b7 = Math.floor(Math.random() * 20) + 1;
+  if(b7 == b1){
+    var  b7 = Math.floor(Math.random() * 20) + 1;
+  } if(b7 == b4){
+      var  b7 = Math.floor(Math.random() * 20) + 1;
+  }
+
   var  b8 = Math.floor(Math.random() * (40 - 21)) + 21;
+  if(b8 == b2){
+    var  b8 = Math.floor(Math.random() * (40 - 21)) + 21;
+  } if(b8 == b5){
+      var  b8 = Math.floor(Math.random() * (40 - 21)) + 21;
+  }
+
   var  b9 = Math.floor(Math.random() * (60 - 41)) + 41;
+  if(b9 == b3){
+    var  b9 = Math.floor(Math.random() * (60 - 41)) + 41;
+  } if(b9 == b6){
+      var  b9 = Math.floor(Math.random() * (60 - 41)) + 41;
+  }
+  
   var  b10 = Math.floor(Math.random() * 20) + 1;
+  if(b10 == b1){
+    var  b10 = Math.floor(Math.random() * 20) + 1;
+  } if (b10 == b4){
+     var  b10 = Math.floor(Math.random() * 20) + 1;
+  } if (b10 == b7){
+     var  b10 = Math.floor(Math.random() * 20) + 1;
+  }
+
   var  b11 = Math.floor(Math.random() * (40 - 21)) + 21;
+  if(b11 == b2){
+    var  b11 = Math.floor(Math.random() * (40 - 21)) + 21;
+  } if(b11 == b5){
+     var  b11 = Math.floor(Math.random() * (40 - 21)) + 21;
+  } if(b11 == b8){
+     var  b11 = Math.floor(Math.random() * (40 - 21)) + 21;
+  }
+
   var  b12 = Math.floor(Math.random() * (60 - 41)) + 41;
+  if(b12 == b3){
+    var  b12 = Math.floor(Math.random() * (60 - 41)) + 41;
+  } if (b12 == b6){
+     var  b12 = Math.floor(Math.random() * (60 - 41)) + 41;
+  } if (b12 == b9){
+     var  b12 = Math.floor(Math.random() * (60 - 41)) + 41;
+  }
+
   var  b13 = Math.floor(Math.random() * 20) + 1;
+  if(b13 == b1){
+    var  b13 = Math.floor(Math.random() * 20) + 1;
+  } if (b13 == b4){
+     var  b13 = Math.floor(Math.random() * 20) + 1;
+  } if (b13 == b7){
+     var  b13 = Math.floor(Math.random() * 20) + 1;
+  } if (b13 == b10){
+     var  b13 = Math.floor(Math.random() * 20) + 1;
+  }
+
   var  b14 = Math.floor(Math.random() * (40 - 21)) + 21;
+  if(b14 == b2){
+    var  b14 = Math.floor(Math.random() * (40 - 21)) + 21;
+  } if (b14 == b5){
+      var  b14 = Math.floor(Math.random() * (40 - 21)) + 21;
+  } if (b14 == b8){
+      var  b14 = Math.floor(Math.random() * (40 - 21)) + 21;
+  } if (b14 == b11){
+      var  b14 = Math.floor(Math.random() * (40 - 21)) + 21;
+  }
+
   var  b15 = Math.floor(Math.random() * (60 - 41)) + 41;
+  if(b15 == b3){
+    var  b15 = Math.floor(Math.random() * (60 - 41)) + 41;
+  } if (b15 == b6){
+      var  b15 = Math.floor(Math.random() * (60 - 41)) + 41;
+  } if (b15 == b9){
+      var  b15 = Math.floor(Math.random() * (60 - 41)) + 41;   
+  } if (b15 == b12){
+      var  b15 = Math.floor(Math.random() * (60 - 41)) + 41;
+  }
 
   bloco1 = document.getElementById("bloco0").innerHTML = b1;
   bloco2 = document.getElementById("bloco1").innerHTML = b2;
