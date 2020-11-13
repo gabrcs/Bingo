@@ -1,7 +1,11 @@
+/* Código em JS criado pelos alunos Gabriel Corrêa e Mayara Zatti, projeto acadêmico solicitado à matéria de Programação WEB */
+
+
 
 var bloco1,bloco2,bloco3,bloco4,bloco5,bloco6,bloco7,bloco8,bloco9,bloco10,bloco11,bloco12,bloco13,bloco14,bloco15;
 var numUsados = new Array();
 
+//Função para gerar os números aleatórios e inserir o valor na cartela
 function geraCartela(){
   //Gera numeros aleatórios
   var  b1 = Math.floor(Math.random() * 20) + 1;  //Entre 1 a 20
@@ -105,6 +109,7 @@ function geraCartela(){
       var  b15 = Math.floor(Math.random() * (60 - 41)) + 41;
   }
 
+  //Adiciona o valor gerado ao bloco na cartela
   bloco1 = document.getElementById("bloco0").innerHTML = b1;
   bloco2 = document.getElementById("bloco1").innerHTML = b2;
   bloco3 = document.getElementById("bloco2").innerHTML = b3;
@@ -121,6 +126,7 @@ function geraCartela(){
   bloco14 = document.getElementById("bloco13").innerHTML = b14;
   bloco15 = document.getElementById("bloco14").innerHTML = b15;
   
+  //Parametros para usar em outra função
   var sq1 = b1;
   var sq2 = b2;
   var sq3 = b3;
@@ -147,24 +153,28 @@ function geraCartela(){
     return;
 }
 
+//Função para sortear os números
 function sorteia(){
+  
   var numSorteados = [];
-  var numSorteios = 0;
+  var numSorteios = 0;  // "0" para que sorteia apenas um numero por vez.
   var numAtual = 0;
-  for (i = 0; i <= numSorteios; i++){
-    numAtual = Math.floor(Math.random() * 60) + 1;
+  
+  for (i = 0; i <= numSorteios; i++){   //Comando de repetição executável até o valor inserido em numSorteios.
+    numAtual = Math.floor(Math.random() * 60) + 1;  //Comando para sortear um número aleatório entre 1 a 60.
     if(numAtual == numAtual){
       if(numSorteados.indexOf(numAtual) ==-1){
-       numSorteados.push(numAtual);
-          var div = document.getElementById("textSorteio");
+       numSorteados.push(numAtual); 
+          var div = document.getElementById("textSorteio"); //Comando para colocar os números na div selecionada.
           div.innerText = "Números sorteados:" ;
           numUsados.push(numAtual);
-          document.getElementById("numSorteados").innerHTML = numUsados;
+          document.getElementById("numSorteados").innerHTML = numUsados; //Comando para salvar o número gerado ao vetor de números gerados.
       }
     }
   }
 } 
 
+//Função para trocar de cor do bloco ao clickado.
 function seleciona(bloco) {
   var blocoAtual = document.getElementById(bloco);
   if (blocoAtual.style.backgroundColor == "lightblue") 
@@ -174,7 +184,8 @@ function seleciona(bloco) {
   return;
 }
 
-function verifNum(sq1,sq2,sq3,sq4,sq5,sq6,sq7,sq9,sq10,sq11,sq12,sq13,sq14,sq15){
+//Função que verifica quantos acertos o usuário fez.
+function verifNum(sq1,sq2,sq3,sq4,sq5,sq6,sq7,sq9,sq10,sq11,sq12,sq13,sq14,sq15){  //Parametros utilizado de outra função
   
   sq1 = document.getElementById("bloco0");
   sq2 = document.getElementById("bloco1");
@@ -192,7 +203,7 @@ function verifNum(sq1,sq2,sq3,sq4,sq5,sq6,sq7,sq9,sq10,sq11,sq12,sq13,sq14,sq15)
   sq14 = document.getElementById("bloco13");
   sq15 = document.getElementById("bloco14");
   
-  var cout = 0;
+  var cout = 0;  //cout = 0 para iniciar
 
   if (sq1.style.backgroundColor == "lightblue"){
     cout++; 
@@ -248,7 +259,8 @@ function verifNum(sq1,sq2,sq3,sq4,sq5,sq6,sq7,sq9,sq10,sq11,sq12,sq13,sq14,sq15)
   if (sq15.style.backgroundColor == "lightblue"){
     cout++;
   }
+  //Caso um bloco esteja selecionado (E mudado a cor), vai ser somado o contador +1.
   
-  var div = document.getElementById("acertos");
+  var div = document.getElementById("acertos"); //Comando para inserir na página quantos acertos o usuário realizou
   div.innerText = "Quantidade de acertos: " + cout;
 }
