@@ -140,7 +140,7 @@ p a{
     text-align: center;
 }
 
-#bingotable{
+#bingo{
     margin: 0 auto;
     text-align: center;
     width: 300px;
@@ -157,7 +157,7 @@ th, td {
     width: 20%;
 }
   
-.orange{
+.coluna{
 	background:#A4B0B9;
 	color: black;
 }
