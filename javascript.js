@@ -152,7 +152,7 @@ function sorteia(){
   var numAtual = 0;
   for (i = 0; i <= numSorteios; i++){
     numAtual = Math.floor(Math.random() * 60) + 1;
-    if(numAtual != 0){
+    if(numAtual == numAtual){
       if(numSorteados.indexOf(numAtual) ==-1){
        numSorteados.push(numAtual);
           var div = document.getElementById("textSorteio");
