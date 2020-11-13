@@ -137,6 +137,7 @@ function geraCartela(){
   var sq14 = b14;
   var sq15 = b15;
 
+  //Reseta as cores dos blocos da cartela
   for (var i = 0; i < 25; i++) {
         if (i == 12)
             continue;
