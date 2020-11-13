@@ -25,13 +25,12 @@ header{
 	padding: 20px;
 	margin: 10px;
 	border-radius: 10px;
-	background-image: -moz-linear-gradient(#212F3C, #000000);
-	background-image: -webkit-linear-gradient(#000000, #212F3C);
+	background-color: rgba(0, 0, 0, 0.9);
 }
 
 footer{
 	clear: both;
-	background-color: #212F3C;
+	background-color: rgba(0, 0, 0, 0.9);
 	height: auto;
 	padding: 10px;
 	text-align: center;
@@ -62,7 +61,7 @@ center{
 }
 
 #div_dir{
-	background-color: rgba(24, 33, 41 , 0.9);
+	background-color: rgba(24, 33, 41 , 0.8);
 	min-height: 500px;
 	width: auto;
 	border-radius: 10px;
@@ -74,15 +73,6 @@ center{
 }
 
 /* Div Esquerda*/
-
-#header{
-	text-align: center;
-	text-decoration-style: solid;
-	animation-duration: 3s;
-	animation-name: slidein;
-	animation-iteration-count: infinite;
-	animation-direction: alternate;
-}
 
 #numbers{
 	background-color: white;
