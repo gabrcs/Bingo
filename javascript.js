@@ -152,6 +152,8 @@ function resetColorNum(){
     var num = document.getElementById("numSorteados");
     num.innerText = "";
     text.innerText = "< Os números sorteados serão inseridos aqui >" ;
+    var acert = document.getElementById("acertos");
+    acert.innerText = "Clique aqui para verificar a quantidade de acertos ";
   }
 }
 
