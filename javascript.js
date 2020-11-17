@@ -1,55 +1,60 @@
 /* Código em JS criado pelos alunos Gabriel Corrêa e Mayara Zatti, projeto acadêmico solicitado à matéria de Programação WEB */
 
-
-
 var bloco1,bloco2,bloco3,bloco4,bloco5,bloco6,bloco7,bloco8,bloco9,bloco10,bloco11,bloco12,bloco13,bloco14,bloco15;
+
 var numUsados = new Array();
 
-//Função para gerar os números aleatórios e inserir o valor na cartela
-function geraCartela(){
+//Função para gerar números aleatórios
+function geraNum(){
+
   //Gera numeros aleatórios
   var  b1 = Math.floor(Math.random() * 20) + 1;  //Entre 1 a 20
   var  b2 = Math.floor(Math.random() * (40 - 21)) + 21;  //Entre 21 a 40
   var  b3 = Math.floor(Math.random() * (60 - 41)) + 41;  //Entre 41 a 60
- 
-  //Verifica se os numeros são iguais ao anteriores
   var  b4 = Math.floor(Math.random() * 20) + 1;
+  var  b5 = Math.floor(Math.random() * (40 - 21)) + 21;
+  var  b6 = Math.floor(Math.random() * (60 - 41)) + 41;
+  var  b7 = Math.floor(Math.random() * 20) + 1;
+  var  b8 = Math.floor(Math.random() * (40 - 21)) + 21;
+  var  b9 = Math.floor(Math.random() * (60 - 41)) + 41;
+  var  b10 = Math.floor(Math.random() * 20) + 1;
+  var  b11 = Math.floor(Math.random() * (40 - 21)) + 21;
+  var  b12 = Math.floor(Math.random() * (60 - 41)) + 41;
+  var  b13 = Math.floor(Math.random() * 20) + 1;
+  var  b14 = Math.floor(Math.random() * (40 - 21)) + 21;
+  var  b15 = Math.floor(Math.random() * (60 - 41)) + 41;
+
+  //Verifica se os numeros são iguais ao anteriores, caso for ele gera outro.
   if(b4 == b1){
     var  b4 = Math.floor(Math.random() * 20) + 1;
   } 
 
-  var  b5 = Math.floor(Math.random() * (40 - 21)) + 21;
   if(b5 == b2){
     var  b5 = Math.floor(Math.random() * (40 - 21)) + 21;
   }
 
-  var  b6 = Math.floor(Math.random() * (60 - 41)) + 41;
   if(b6 == b3){
     var  b6 = Math.floor(Math.random() * (60 - 41)) + 41;
   }
   
-  var  b7 = Math.floor(Math.random() * 20) + 1;
   if(b7 == b1){
     var  b7 = Math.floor(Math.random() * 20) + 1;
   } if(b7 == b4){
       var  b7 = Math.floor(Math.random() * 20) + 1;
   }
 
-  var  b8 = Math.floor(Math.random() * (40 - 21)) + 21;
   if(b8 == b2){
     var  b8 = Math.floor(Math.random() * (40 - 21)) + 21;
   } if(b8 == b5){
       var  b8 = Math.floor(Math.random() * (40 - 21)) + 21;
   }
 
-  var  b9 = Math.floor(Math.random() * (60 - 41)) + 41;
   if(b9 == b3){
     var  b9 = Math.floor(Math.random() * (60 - 41)) + 41;
   } if(b9 == b6){
       var  b9 = Math.floor(Math.random() * (60 - 41)) + 41;
   }
   
-  var  b10 = Math.floor(Math.random() * 20) + 1;
   if(b10 == b1){
     var  b10 = Math.floor(Math.random() * 20) + 1;
   } if (b10 == b4){
@@ -58,7 +63,6 @@ function geraCartela(){
      var  b10 = Math.floor(Math.random() * 20) + 1;
   }
 
-  var  b11 = Math.floor(Math.random() * (40 - 21)) + 21;
   if(b11 == b2){
     var  b11 = Math.floor(Math.random() * (40 - 21)) + 21;
   } if(b11 == b5){
@@ -67,7 +71,6 @@ function geraCartela(){
      var  b11 = Math.floor(Math.random() * (40 - 21)) + 21;
   }
 
-  var  b12 = Math.floor(Math.random() * (60 - 41)) + 41;
   if(b12 == b3){
     var  b12 = Math.floor(Math.random() * (60 - 41)) + 41;
   } if (b12 == b6){
@@ -76,7 +79,6 @@ function geraCartela(){
      var  b12 = Math.floor(Math.random() * (60 - 41)) + 41;
   }
 
-  var  b13 = Math.floor(Math.random() * 20) + 1;
   if(b13 == b1){
     var  b13 = Math.floor(Math.random() * 20) + 1;
   } if (b13 == b4){
@@ -87,7 +89,6 @@ function geraCartela(){
      var  b13 = Math.floor(Math.random() * 20) + 1;
   }
 
-  var  b14 = Math.floor(Math.random() * (40 - 21)) + 21;
   if(b14 == b2){
     var  b14 = Math.floor(Math.random() * (40 - 21)) + 21;
   } if (b14 == b5){
@@ -98,7 +99,6 @@ function geraCartela(){
       var  b14 = Math.floor(Math.random() * (40 - 21)) + 21;
   }
 
-  var  b15 = Math.floor(Math.random() * (60 - 41)) + 41;
   if(b15 == b3){
     var  b15 = Math.floor(Math.random() * (60 - 41)) + 41;
   } if (b15 == b6){
@@ -109,7 +109,7 @@ function geraCartela(){
       var  b15 = Math.floor(Math.random() * (60 - 41)) + 41;
   }
 
-  //Adiciona o valor gerado ao bloco na cartela
+  //Insere o número no bloco.
   bloco1 = document.getElementById("bloco0").innerHTML = b1;
   bloco2 = document.getElementById("bloco1").innerHTML = b2;
   bloco3 = document.getElementById("bloco2").innerHTML = b3;
@@ -126,31 +126,23 @@ function geraCartela(){
   bloco14 = document.getElementById("bloco13").innerHTML = b14;
   bloco15 = document.getElementById("bloco14").innerHTML = b15;
   
-  //Parametros para usar em outra função
-  var sq1 = b1;
-  var sq2 = b2;
-  var sq3 = b3;
-  var sq4 = b4;
-  var sq5 = b5;
-  var sq6 = b6;
-  var sq7 = b7;
-  var sq8 = b8;
-  var sq9 = b9;
-  var sq10 = b10;
-  var sq11 = b11;
-  var sq12 = b12;
-  var sq13 = b13;
-  var sq14 = b14;
-  var sq15 = b15;
+}
 
-  //Reseta as cores dos blocos da cartela
-  for (var i = 0; i < 25; i++) {
-        if (i == 12)
-            continue;
-        var currentSquare = document.getElementById("bloco" + i);
-        currentSquare.style.backgroundColor = "#ffffff";
-    }
-    return;
+//Função para remover o background-color definido ao selecionar o bloco da cartela e números sorteados.
+function resetColorNum(){
+  for (var i = 0; i < 15; i++) {
+    var currentSquare = document.getElementById("bloco" + i);
+    currentSquare.style.backgroundColor = "#ffffff";
+    var text = document.getElementById("textSorteio");
+    var num = document.getElementById("numSorteados");
+    num.innerText = "";
+    text.innerText = "< Os números sorteados serão inseridos aqui >" ;
+  }
+}
+
+function geraCartela(){
+  geraNum();
+  resetColorNum();
 }
 
 //Função para sortear os números
