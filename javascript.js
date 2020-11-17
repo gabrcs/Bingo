@@ -126,6 +126,21 @@ function geraNum(){
   bloco14 = document.getElementById("bloco13").innerHTML = b14;
   bloco15 = document.getElementById("bloco14").innerHTML = b15;
   
+  var sq1 = b1;
+  var sq2 = b2;
+  var sq3 = b3;
+  var sq4 = b4;
+  var sq5 = b5;
+  var sq6 = b6;
+  var sq7 = b7;
+  var sq8 = b8;
+  var sq9 = b9;
+  var sq10 = b10;
+  var sq11 = b11;
+  var sq12 = b12;
+  var sq13 = b13;
+  var sq14 = b14;
+  var sq15 = b15;
 }
 
 //Função para remover o background-color definido ao selecionar o bloco da cartela e números sorteados.
