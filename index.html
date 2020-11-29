@@ -5,7 +5,7 @@
 			<title>Bingo </title>
             <link rel="stylesheet" type="text/css" href="style.css">
             <script type="text/javascript" src="javascript.js"></script>
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
 
 	<body onload="geraCartela()">
@@ -52,16 +52,22 @@
                                 </tr>
                             </table>
                         </div>
+                       
                     <br>
-                    <center><p id="sort"> <strong><a href="#"onclick="sorteia()"> Sorteie um numero </a></strong></p></center>
+                    <center><p id="sort"> <a href="#"onclick="sorteia()"> Sorteie um numero </a></p></center>
                     <div id="numbers">
                         <p id="textSorteio"> < Os números sorteados serão inseridos aqui > </p>
                         <p id="numSorteados">  </p>
                     </div>
+
+                    <div id="numbers">
+                    <strong> <p> *Para contabilizar os acertos, é necessário selecionar os blocos acertados.*  </p></strong>
+                    </div>
+
                     <div id="numbers">
                         <p id="acertos"> <a href="#" onclick="verifNum()"> Clique aqui para verificar a quantidade de acertos  </a></a></p>
                     </div>
-                    <center><p id="para"><strong><a href="#" onclick="geraCartela()"> Clique Aqui para criar uma nova cartela</a></strong></p></center>            
+                    <center><p id="para"><a href="#" onclick="geraCartela()"> Clique Aqui para criar uma nova cartela</a></p></center>            
                     
                 
                 </div>
@@ -85,3 +91,4 @@
 	</body>
 
 </html>
+
