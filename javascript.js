@@ -152,14 +152,13 @@ function resetColorNum(){
     var num = document.getElementById("numSorteados");
     num.innerText = "";
     text.innerText = "< Os números sorteados serão inseridos aqui >" ;
-    var acert = document.getElementById("acertos");
-    acert.innerText = "Clique aqui para verificar a quantidade de acertos ";
   }
 }
 
 function geraCartela(){
   geraNum();
   resetColorNum();
+  numUsados = numUsados = new Array();
 }
 
 //Função para sortear os números
@@ -178,10 +177,11 @@ function sorteia(){
           div.innerText = "Números sorteados:" ;
           numUsados.push(numAtual);
           document.getElementById("numSorteados").innerHTML = numUsados; //Comando para salvar o número gerado ao vetor de números gerados.
-      }
+      } 
     }
   }
-} 
+}
+ 
 
 //Função para trocar de cor do bloco ao clickado.
 function seleciona(bloco) {
@@ -270,6 +270,11 @@ function verifNum(sq1,sq2,sq3,sq4,sq5,sq6,sq7,sq9,sq10,sq11,sq12,sq13,sq14,sq15)
   }
   //Caso um bloco esteja selecionado (E mudado a cor), vai ser somado o contador +1.
   
-  var div = document.getElementById("acertos"); //Comando para inserir na página quantos acertos o usuário realizou
-  div.innerText = "Quantidade de acertos: " + cout;
+  if(cout == 1){
+    alert("Você acertou " + cout + " número!!")
+  } if (cout >= 2){
+    alert("Você acertou " + cout + " números!!")
+  } else {
+    alert("Você não acertou nenhum número :(")
+  }
 }
